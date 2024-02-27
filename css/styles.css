@@ -138,6 +138,21 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-color-text);
   font-weight: 500;
+  position: relative;
+}
+
+.index:hover::after,
+.portfolio:hover::after,
+.contacts:hover::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 1px);
+  height: 4px;
+  background-color: var(--button-color-filters);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
 }
 
 .address ul li a {
