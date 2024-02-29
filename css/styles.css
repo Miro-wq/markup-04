@@ -42,9 +42,26 @@ h3 {
 }
 
 .hero-container {
-  width: 1200px;
+  width: 1440px;
   height: 600px;
-  margin: 0 auto;
+  margin: 72px auto 0;
+  position: relative;
+  background: url(../images/office.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.hero-container::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(46, 47, 66, 0.7);
+  z-index: 1;
 }
 
 .description-container {
@@ -83,12 +100,20 @@ body {
   background-color: var(--primary-color);
   border-bottom: 1px solid #e7e9fc;
   position: fixed;
+  position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .global-header a {
   text-decoration: none;
+}
+
+.global-header ul {
+  display: flex;
 }
 
 .logo {
@@ -159,7 +184,6 @@ body {
   color: var(--accent-color-description);
   font-weight: 400;
   letter-spacing: 0.02em;
-  /* padding-left: 40px; */
 }
 
 .address a:hover {
@@ -167,6 +191,8 @@ body {
 }
 
 .hero h1 {
+  position: relative;
+  z-index: 4;
   font-size: 56px;
   font-weight: 700;
   line-height: 70px;
@@ -183,11 +209,12 @@ body {
 
 .hero {
   text-align: center;
-  background-color: var(--accent-color-text);
   color: var(--primary-color);
 }
 
 .hero button {
+  position: relative;
+  z-index: 2;
   background-color: var(--accent-color-iris);
   cursor: pointer;
   color: var(--primary-color);
@@ -195,10 +222,12 @@ body {
   width: 169px;
   height: 56px;
   border-radius: 4px;
-  margin-top: 48px; /* ce e asta ????????????????????????*/
+  margin-top: 48px;
 }
 
 .button {
+  position: relative;
+  z-index: 2; /* To animate the arrow on hover */
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -235,6 +264,12 @@ body {
 .one {
   display: flex;
   justify-content: center;
+  list-style: none;
+}
+
+.one ul {
+  display: flex;
+  gap: 50px;
   list-style: none;
 }
 
@@ -310,6 +345,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   gap: 47px;
   padding-top: 72px;
+  list-style: none;
 }
 
 .card p {
@@ -344,11 +380,6 @@ body {
 .team-member:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
-ul {
-  list-style: none;
-  display: flex;
 }
 
 footer {
