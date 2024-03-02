@@ -264,7 +264,7 @@ body {
 
 .one ul {
   display: flex;
-  gap: 50px;
+  gap: 43px;
   list-style: none;
 }
 
@@ -284,7 +284,25 @@ body {
   margin-top: 8px;
 }
 
+.vector-group {
+  box-sizing: content-box;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  background-color: var(--accent-color-cloud);
+  margin-bottom: 8px;
+}
+
+.vector-group .vector {
+  width: 64px;
+  height: 64px;
+}
+
 .what-are {
+  margin-top: 120px;
   justify-content: center;
   margin-bottom: 72px;
   font-size: 36px;
@@ -320,6 +338,7 @@ body {
   background-color: var(--accent-color-cloud);
   display: flex;
   justify-content: center;
+  margin-top: 120px;
 }
 
 .our-team {
