@@ -75,6 +75,7 @@ h3 {
 
 .last-container {
   width: 1200px;
+  display: flex;
   height: 312px;
   margin: 0 auto;
 }
@@ -153,7 +154,10 @@ body {
 
 .index:hover::after,
 .portfolio:hover::after,
-.contacts:hover::after {
+.contacts:hover::after,
+.index:focus::after,
+.portfolio:focus:after,
+.contacts:focus::after {
   content: "";
   position: absolute;
   width: calc(100% - 1px);
@@ -172,7 +176,8 @@ body {
   /* padding-left: 40px; */
 }
 
-.address a:hover {
+.address a:hover,
+.address a:focus {
   color: var(--button-color-filters);
 }
 
@@ -281,59 +286,97 @@ footer {
   background-color: var(--accent-color-text);
 }
 
-footer p {
-  color: var(--accent-color-cloud);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: left;
-}
-
 footer a {
   text-decoration: none;
 }
 
 .increase {
+  color: #f4f4fd;
   box-sizing: content-box;
   width: 264px;
   height: 72px;
   padding-top: 16px;
 }
 
-footer .web,
-footer .studio {
-  text-transform: uppercase;
-  width: 115px;
-  font-weight: 800;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
 .web-footer {
   color: var(--accent-color-iris);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .studio-footer {
   color: var(--accent-color-cloud);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .logo-footer {
+  box-sizing: content-box;
+  width: 115px;
+  height: 24px;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   text-transform: uppercase;
   font-family: var(--second-family);
   font-size: 18px;
   font-weight: 800;
-  line-height: 21px;
+  line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
+}
+
+.footer-extras {
+  box-sizing: border-box;
+  width: 264px;
+  height: 112px;
   padding-top: 100px;
+}
+
+.social-icons {
+  box-sizing: border-box;
+  width: 208px;
+  height: 80;
+  color: var(--accent-color-cloud);
+  margin-top: 100px;
+  margin-bottom: 132px;
+  margin-left: 120px;
+}
+
+.social-icons ul {
+  display: flex;
+}
+
+.social-media {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+
+.footer-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer-icons .social-links svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--accent-color-cloud);
+}
+
+.footer-icons .social-links {
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent-color-iris);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icons-color);
+}
+
+.footer-icons .social-links:hover,
+.footer-icons .social-links:focus {
+  background-color: var(--green-new-color);
 }
