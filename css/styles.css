@@ -57,6 +57,7 @@ h3 {
   background-size: cover;
 }
 
+/*--stilizare containere principale--*/
 .description-container {
   width: 1200px;
   height: 104px;
@@ -97,7 +98,9 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare global header si logo webstudio--*/
 .global-header {
   background-color: var(--primary-color);
   border-bottom: 1px solid #e7e9fc;
@@ -139,7 +142,9 @@ body {
 .studio {
   color: var(--accent-color-text);
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare navigatie catre pagini si contact--*/
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -195,7 +200,9 @@ body {
 .address a:focus {
   color: var(--button-color-filters);
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare sectiunea hero si buton "order service"--*/
 .hero h1 {
   position: relative;
   z-index: 4;
@@ -249,7 +256,9 @@ body {
 .hero button:active {
   background-color: var(--accent-color-iris);
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare sectiunea descriere servicii si vectori--*/
 .one h3 {
   font-size: 20px;
   font-weight: 500;
@@ -311,7 +320,9 @@ body {
   width: 64px;
   height: 64px;
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare sectiune "what are we doing" si imagini--*/
 .what-are {
   margin-top: 120px;
   justify-content: center;
@@ -351,7 +362,9 @@ body {
   justify-content: center;
   margin-top: 120px;
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare sectiune "our team" si social links--*/
 .our-team {
   justify-content: center;
   display: flex;
@@ -432,8 +445,9 @@ body {
 .icons-list .icon:focus {
   background-color: var(--icons-color-hover);
 }
+/*---------------------------------------------------------*/
 
-/* stil css pentru custom h2 footer si vectori */
+/*--stilizare sectiune "customers"--*/
 .custom {
   font-weight: 700;
   font-size: 36px;
@@ -445,7 +459,6 @@ body {
 }
 
 .customers {
-  /*sectiunea*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -517,7 +530,9 @@ body {
   width: 1200px;
   height: 88px;
 }
-/*pana aici*/
+/*---------------------------------------------------------*/
+
+/*--stilizare footer, logo si linkuri sociale--*/
 footer {
   background-color: var(--accent-color-text);
 }
@@ -616,7 +631,4 @@ footer a {
 .footer-icons .social-links:focus {
   background-color: var(--green-new-color);
 }
-
-/************************************************************************/
-/**********************************************************************/
-/***************************************************************************/
+/*------------------------end---------------------------------*/
