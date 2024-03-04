@@ -28,6 +28,7 @@ h3 {
   font-family: var(--font-family);
 }
 
+/*--stilizare containere principale--*/
 .header-container {
   width: 1200px;
   height: 72px;
@@ -87,7 +88,9 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare global header si logo webstudio--*/
 .global-header {
   background-color: var(--primary-color);
   border-bottom: 1px solid #e7e9fc;
@@ -180,7 +183,9 @@ body {
 .address a:focus {
   color: var(--button-color-filters);
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare butoane navigatie--*/
 .filters li button {
   font-family: var(--font-family);
   font-size: 16px;
@@ -213,7 +218,9 @@ ul {
   display: flex;
   text-decoration: none;
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare sectiuni imagini rand 1, 2 si 3 --*/
 .row-1,
 .row-2,
 .row-3 {
@@ -281,7 +288,9 @@ ul {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare sectiune footer, logo si linkuri sociale--*/
 footer {
   background-color: var(--accent-color-text);
 }
@@ -380,3 +389,4 @@ footer a {
 .footer-icons .social-links:focus {
   background-color: var(--green-new-color);
 }
+/*--------------------------end-------------------------------*/
