@@ -48,8 +48,7 @@ h3 {
 .hero-container {
   width: 1440px;
   height: 600px;
-  margin: 72px auto 0;
-  position: relative;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -60,7 +59,6 @@ h3 {
 
 .description-container {
   justify-content: center;
-  border: 3px solid black;
   width: 1200px;
   height: 224px;
   margin-top: 120px;
@@ -71,13 +69,11 @@ h3 {
   width: 1200px;
   height: 412px;
   margin-bottom: 120px;
-  border: 3px solid black;
 }
 
 .id-container {
   width: 1200px;
   height: 780px;
-  border: 3px solid red;
 }
 
 .customers-logo {
@@ -85,7 +81,6 @@ h3 {
   height: 200px;
   margin-top: 120px;
   margin-bottom: 120px;
-  border: 3px solid blue;
 }
 
 .last-container {
@@ -108,7 +103,8 @@ body {
 .global-header {
   background-color: var(--primary-color);
   border-bottom: 1px solid #e7e9fc;
-  position: fixed;
+  position: sticky;
+  z-index: 10;
   top: 0;
   width: 100%;
   z-index: 999;
@@ -176,6 +172,19 @@ body {
   position: relative;
 }
 
+.index.active::after,
+.index.current::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 1px);
+  height: 4px;
+  background-color: var(--button-color-filters);
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
 .index:hover::after,
 .portfolio:hover::after,
 .contacts:hover::after,
@@ -207,7 +216,6 @@ body {
 
 /*--stilizare sectiunea hero si buton "order service"--*/
 .hero h1 {
-  position: relative;
   z-index: 4;
   font-size: 56px;
   font-weight: 700;
@@ -228,8 +236,7 @@ body {
   color: var(--primary-color);
 }
 
-.hero button {
-  position: relative;
+.hero .order-service-btn {
   z-index: 2;
   background-color: var(--accent-color-iris);
   cursor: pointer;
@@ -239,16 +246,6 @@ body {
   height: 56px;
   border-radius: 4px;
   margin-top: 48px;
-}
-
-.button {
-  position: relative;
-  z-index: 2;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  text-align: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -283,7 +280,6 @@ body {
   display: flex;
   justify-content: center;
   list-style: none;
-  border: 3px solid red;
 }
 
 .one ul {
@@ -328,7 +324,6 @@ body {
 
 /*--stilizare sectiune "what are we doing" si imagini--*/
 .what-are {
-  /* margin-top: 120px; */
   justify-content: center;
   margin-bottom: 72px;
   font-size: 36px;
@@ -338,7 +333,6 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--accent-color-text);
-  border: 3px solid green;
 }
 
 .about ul.images {
@@ -367,7 +361,6 @@ body {
   background-color: var(--accent-color-cloud);
   display: flex;
   justify-content: center;
-  border: 3px solid black;
 }
 
 .our-team {
@@ -380,7 +373,6 @@ body {
   color: var(--accent-color-text);
   text-transform: capitalize;
   padding-top: 120px;
-  border: 3px solid green;
 }
 
 .team {
@@ -390,7 +382,6 @@ body {
   gap: 47px;
   padding-top: 72px;
   list-style: none;
-  border: 3px solid green;
 }
 
 .card p {
@@ -422,7 +413,6 @@ body {
   background-color: var(--primary-color);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  border: 3px solid green;
 }
 
 .icons-list {
@@ -464,14 +454,12 @@ body {
   text-transform: capitalize;
   text-align: center;
   color: var(--accent-color-text);
-  border: 3px solid green;
 }
 
 .customers {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid black;
 }
 
 .client1,
@@ -539,7 +527,6 @@ body {
   gap: 37px;
   width: 1200px;
   height: 88px;
-  border: 3px solid red;
 }
 /*---------------------------------------------------------*/
 
@@ -641,5 +628,40 @@ footer a {
 .footer-icons .social-links:hover,
 .footer-icons .social-links:focus {
   background-color: var(--green-new-color);
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #fcfcfc;
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+
+.close-btn {
+  background-color: gray;
+  border-radius: 50%;
+  position: absolute;
+  color: #fff;
+  top: 24px;
+  right: 24px;
+  outline: none;
+  border-color: gray;
 }
 /*------------------------end---------------------------------*/

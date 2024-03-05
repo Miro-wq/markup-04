@@ -30,8 +30,10 @@
         <div class="main-nav">
           <nav>
             <ul>
-              <li><a href="index.html" class="index">Studio</a></li>
-              <li><a href="portfolio.html" class="portfolio">Portfolio</a></li>
+              <li><a href="index.html" class="index active">Studio</a></li>
+              <li>
+                <a href="portfolio.html" class="portfolio active">Portfolio</a>
+              </li>
               <li><a href="contacts.html" class="contacts">Contacts</a></li>
             </ul>
           </nav>
@@ -54,7 +56,19 @@
       <section class="hero">
         <div class="hero-container">
           <h1 class="solutions">Effective Solutions for your business</h1>
-          <button type="button" class="button">Order Service</button>
+          <button
+            type="button"
+            class="button order-service-btn"
+            data-modal-open
+          >
+            Order Service
+          </button>
+        </div>
+        <div class="modal is-hidden" data-modal>
+          <div class="modal-content">
+            <button class="close-btn" data-modal-close>&times;</button>
+            Continut modal
+          </div>
         </div>
       </section>
       <!--sectiune descriere servicii si vectori -->
@@ -481,5 +495,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -36,14 +36,12 @@ h3 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  border: 3px solid black;
 }
 
 .filters {
   margin-top: 72px;
   display: flex;
   flex-direction: column;
-  border: 3px solid red;
   margin-bottom: 72px;
   margin-top: 96px;
 }
@@ -52,37 +50,27 @@ h3 {
   width: 586px;
   height: 48px;
   margin: 0 auto;
-  /* margin-top: 96px; */
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-self: center;
   justify-content: space-between;
   flex-direction: row;
-  border: 3px solid black;
-  /* margin-bottom: 40px; */
 }
 
 .first-line-container {
   width: 1200px;
   height: 420px;
-  /* margin-top: 72px; */
-  border: 3px solid black;
 }
 
 .second-line-container {
   width: 1200px;
   height: 420px;
-  /* margin-top: 48px; */
-  border: 3px solid black;
 }
 
 .third-line-container {
   width: 1200px;
   height: 420px;
-  /* margin-top: 48px; */
-  /* margin-bottom: 120px; */
-  border: 3px solid black;
 }
 
 .last-container {
@@ -90,7 +78,6 @@ h3 {
   display: flex;
   height: 312px;
   margin: 0 auto;
-  border: 3px solid black;
 }
 
 body {
@@ -108,12 +95,12 @@ body {
   height: 72px;
   background-color: var(--primary-color);
   border-bottom: 1px solid #e7e9fc;
-  position: fixed;
+  position: sticky;
+  z-index: 10;
   top: 0;
   width: 100%;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  border: 3px solid red;
 }
 
 .global-header a {
@@ -170,6 +157,19 @@ body {
   position: relative;
 }
 
+.portfolio.active::after,
+.portfolio.current::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 1px);
+  height: 4px;
+  background-color: var(--button-color-filters);
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
 .index:hover::after,
 .portfolio:hover::after,
 .contacts:hover::after,
@@ -191,7 +191,6 @@ body {
   color: var(--accent-color-description);
   font-weight: 400;
   letter-spacing: 0.02em;
-  /* padding-left: 40px; */
 }
 
 .address a:hover,
@@ -205,7 +204,6 @@ body {
   font-family: var(--font-family);
   font-size: 16px;
   font-weight: 500;
-  /* line-height: 24px; */
   letter-spacing: 0.04em;
   text-align: center;
   border-radius: 4px;
@@ -236,12 +234,50 @@ ul {
 /*---------------------------------------------------------*/
 
 /*--stilizare sectiuni imagini rand 1, 2 si 3 --*/
+.image-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 360px;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color-iris);
+  transform: translatey(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card1:hover .overlay,
+.card2:hover .overlay,
+.card3:hover .overlay,
+.card4:hover .overlay,
+.card5:hover .overlay,
+.card6:hover .overlay,
+.card7:hover .overlay,
+.card8:hover .overlay,
+.card9:hover .overlay {
+  transform: translatey(0);
+}
+
+.overlay .paragraph {
+  color: var(--accent-color-cloud);
+  margin: 40px 32px 164px 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .row-1,
 .row-2,
 .row-3 {
   display: flex;
   justify-content: center;
-  border: 3px solid red;
   margin-bottom: 48px;
 }
 
@@ -250,8 +286,6 @@ ul {
 .row-3 ul {
   justify-content: space-between;
   align-items: center;
-  /* gap: 24px; */
-  border: 3px solid green;
 }
 
 .row-1 h3,
@@ -259,14 +293,12 @@ ul {
 .row-3 h3 {
   font-size: 20px;
   font-weight: 500;
-  /* line-height: 120%; */
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--accent-color-text);
   margin-left: 16px;
   margin-top: 32px;
   margin-bottom: 8px;
-  border: 3px solid violet;
 }
 
 .row-1 p,
@@ -274,12 +306,10 @@ ul {
 .row-3 p {
   font-size: 16px;
   font-weight: 400;
-  /* line-height: 150%; */
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--accent-color-description);
   margin-left: 16px;
-  border: 3px solid violet;
 }
 
 .card1,
@@ -295,8 +325,6 @@ ul {
   height: 420px;
   border-bottom: 1px solid var(--accent-color-filters);
   text-align: center;
-  /* margin-top: 45px; */
-  border: 3px solid blue;
 }
 
 .card1:hover,
@@ -316,7 +344,6 @@ ul {
 /*--stilizare sectiune footer, logo si linkuri sociale--*/
 footer {
   background-color: var(--accent-color-text);
-  border: 3px solid red;
   margin-top: 120px;
 }
 
