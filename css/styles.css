@@ -35,6 +35,7 @@ h3 {
   font-family: var(--font-family);
 }
 
+/*--stilizare containere principale--*/
 .header-container {
   width: 1200px;
   height: 72px;
@@ -57,24 +58,26 @@ h3 {
   background-size: cover;
 }
 
-/*--stilizare containere principale--*/
 .description-container {
+  justify-content: center;
+  border: 3px solid black;
   width: 1200px;
-  height: 104px;
+  height: 224px;
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .pictures-container {
   width: 1200px;
   height: 412px;
-  margin-top: 120px;
   margin-bottom: 120px;
+  border: 3px solid black;
 }
 
 .id-container {
   width: 1200px;
-  height: 732px;
-  margin-bottom: 120px;
+  height: 780px;
+  border: 3px solid red;
 }
 
 .customers-logo {
@@ -82,6 +85,7 @@ h3 {
   height: 200px;
   margin-top: 120px;
   margin-bottom: 120px;
+  border: 3px solid blue;
 }
 
 .last-container {
@@ -104,7 +108,6 @@ body {
 .global-header {
   background-color: var(--primary-color);
   border-bottom: 1px solid #e7e9fc;
-  position: fixed;
   position: fixed;
   top: 0;
   width: 100%;
@@ -184,7 +187,7 @@ body {
   width: calc(100% - 1px);
   height: 4px;
   background-color: var(--button-color-filters);
-  bottom: -10px;
+  bottom: -27px;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 3px;
@@ -280,6 +283,7 @@ body {
   display: flex;
   justify-content: center;
   list-style: none;
+  border: 3px solid red;
 }
 
 .one ul {
@@ -324,7 +328,7 @@ body {
 
 /*--stilizare sectiune "what are we doing" si imagini--*/
 .what-are {
-  margin-top: 120px;
+  /* margin-top: 120px; */
   justify-content: center;
   margin-bottom: 72px;
   font-size: 36px;
@@ -334,6 +338,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--accent-color-text);
+  border: 3px solid green;
 }
 
 .about ul.images {
@@ -348,7 +353,9 @@ body {
   display: flex;
   justify-content: center;
 }
+/*---------------------------------------------------------*/
 
+/*--stilizare sectiune "our team" si social links--*/
 .card ul.team-member {
   display: flex;
   list-style: none;
@@ -360,11 +367,9 @@ body {
   background-color: var(--accent-color-cloud);
   display: flex;
   justify-content: center;
-  margin-top: 120px;
+  border: 3px solid black;
 }
-/*---------------------------------------------------------*/
 
-/*--stilizare sectiune "our team" si social links--*/
 .our-team {
   justify-content: center;
   display: flex;
@@ -375,6 +380,7 @@ body {
   color: var(--accent-color-text);
   text-transform: capitalize;
   padding-top: 120px;
+  border: 3px solid green;
 }
 
 .team {
@@ -384,6 +390,7 @@ body {
   gap: 47px;
   padding-top: 72px;
   list-style: none;
+  border: 3px solid green;
 }
 
 .card p {
@@ -415,6 +422,7 @@ body {
   background-color: var(--primary-color);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  border: 3px solid green;
 }
 
 .icons-list {
@@ -456,12 +464,14 @@ body {
   text-transform: capitalize;
   text-align: center;
   color: var(--accent-color-text);
+  border: 3px solid green;
 }
 
 .customers {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 3px solid black;
 }
 
 .client1,
@@ -529,6 +539,7 @@ body {
   gap: 37px;
   width: 1200px;
   height: 88px;
+  border: 3px solid red;
 }
 /*---------------------------------------------------------*/
 

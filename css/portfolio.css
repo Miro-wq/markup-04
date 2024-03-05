@@ -36,42 +36,53 @@ h3 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  border: 3px solid black;
 }
 
 .filters {
+  margin-top: 72px;
   display: flex;
   flex-direction: column;
-}
-.navigation-container {
-  margin-top: 150px;
-  flex-direction: column;
+  border: 3px solid red;
+  margin-bottom: 72px;
+  margin-top: 96px;
 }
 
 .navigation-container ul {
-  gap: 1.5em;
+  width: 586px;
+  height: 48px;
+  margin: 0 auto;
+  /* margin-top: 96px; */
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-self: center;
+  justify-content: space-between;
   flex-direction: row;
+  border: 3px solid black;
+  /* margin-bottom: 40px; */
 }
 
 .first-line-container {
   width: 1200px;
   height: 420px;
-  margin-top: 72px;
+  /* margin-top: 72px; */
+  border: 3px solid black;
 }
 
 .second-line-container {
   width: 1200px;
   height: 420px;
-  margin-top: 48px;
+  /* margin-top: 48px; */
+  border: 3px solid black;
 }
 
 .third-line-container {
   width: 1200px;
   height: 420px;
-  margin-top: 48px;
-  margin-bottom: 120px;
+  /* margin-top: 48px; */
+  /* margin-bottom: 120px; */
+  border: 3px solid black;
 }
 
 .last-container {
@@ -79,6 +90,7 @@ h3 {
   display: flex;
   height: 312px;
   margin: 0 auto;
+  border: 3px solid black;
 }
 
 body {
@@ -92,6 +104,8 @@ body {
 
 /*--stilizare global header si logo webstudio--*/
 .global-header {
+  width: 1200px;
+  height: 72px;
   background-color: var(--primary-color);
   border-bottom: 1px solid #e7e9fc;
   position: fixed;
@@ -99,6 +113,7 @@ body {
   width: 100%;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  border: 3px solid red;
 }
 
 .global-header a {
@@ -166,7 +181,7 @@ body {
   width: calc(100% - 1px);
   height: 4px;
   background-color: var(--button-color-filters);
-  bottom: -10px;
+  bottom: -27px;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 3px;
@@ -190,7 +205,7 @@ body {
   font-family: var(--font-family);
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
+  /* line-height: 24px; */
   letter-spacing: 0.04em;
   text-align: center;
   border-radius: 4px;
@@ -226,14 +241,17 @@ ul {
 .row-3 {
   display: flex;
   justify-content: center;
+  border: 3px solid red;
+  margin-bottom: 48px;
 }
 
 .row-1 ul,
 .row-2 ul,
 .row-3 ul {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  /* gap: 24px; */
+  border: 3px solid green;
 }
 
 .row-1 h3,
@@ -241,11 +259,14 @@ ul {
 .row-3 h3 {
   font-size: 20px;
   font-weight: 500;
-  line-height: 120%;
+  /* line-height: 120%; */
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--accent-color-text);
-  margin: 16px;
+  margin-left: 16px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  border: 3px solid violet;
 }
 
 .row-1 p,
@@ -253,11 +274,12 @@ ul {
 .row-3 p {
   font-size: 16px;
   font-weight: 400;
-  line-height: 150%;
+  /* line-height: 150%; */
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--accent-color-description);
-  margin: 16px;
+  margin-left: 16px;
+  border: 3px solid violet;
 }
 
 .card1,
@@ -273,7 +295,8 @@ ul {
   height: 420px;
   border-bottom: 1px solid var(--accent-color-filters);
   text-align: center;
-  margin-top: 45px;
+  /* margin-top: 45px; */
+  border: 3px solid blue;
 }
 
 .card1:hover,
@@ -293,6 +316,8 @@ ul {
 /*--stilizare sectiune footer, logo si linkuri sociale--*/
 footer {
   background-color: var(--accent-color-text);
+  border: 3px solid red;
+  margin-top: 120px;
 }
 
 footer a {
