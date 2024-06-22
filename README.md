@@ -17,16 +17,9 @@ Converting a Figma design into a functional website taught me to interpret desig
 
 
 ## 🛠 Tools
-HTML, CSS
+[![My Skills](https://skillicons.dev/icons?i=html,css,)](https://skillicons.dev)
 
 
 ## Optimizations
 
 Refactors, performance improvements, accessibility and responsivnes.
-
-
-## License
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
-
