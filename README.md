@@ -13,7 +13,7 @@ Converting a Figma design into a functional website taught me to interpret desig
 
 - Additional browser support
 
-- Add more features
+- Adding more features
 
 
 ## 🛠 Tools
